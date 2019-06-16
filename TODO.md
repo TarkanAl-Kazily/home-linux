@@ -5,6 +5,8 @@
 [ ] Games!
 [ ] Docker
 [ ] Messenging (Slack, Mattermost?)
+[ ] Graphics card settings - disable
+[ ] Power settings
 
 # Things to install
 
@@ -17,3 +19,4 @@
 [ ] Tilda colorscheme
 [ ] bashrc
 [ ] vimrc
+[ ] Touchpad settings - tap to click, gestures
