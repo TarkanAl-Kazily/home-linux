@@ -44,8 +44,7 @@ Plug 'fsharp/vim-fsharp', {
 
 call plug#end()
 
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_right_sep = '>'
+let g:airline_powerline_fonts = 1
 
 set laststatus=2
 
