@@ -7,15 +7,17 @@
 [ ] Messenging (Slack, Mattermost?)
 [X] Graphics card settings
 [ ] Power settings
+[ ] Wallpaper
 
 # Things to install
 
 [ ] tmux
 [ ] Vim plugins
+[ ] A good display manager (session manager, greeter)
 
 # Things to fix
 
-[ ] Tilda dropdown key - shift space is too easy to trigger while typing
+[X] Tilda dropdown key - changed to <Control>space
 [ ] Tilda colorscheme
 [ ] bashrc
 [ ] vimrc

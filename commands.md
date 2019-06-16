@@ -19,4 +19,4 @@
 
 # Desktop
 
-- <Shift>space: dropdown Tilda. TODO: Change!
+- <Control>space: dropdown Tilda.
