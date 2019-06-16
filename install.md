@@ -113,4 +113,5 @@ Disable Windows Fast Startup
 
 ## Backlight
 
-Installed a new version of xbacklight
+The special keys don't all work properly without X running, but worked
+fine with X.

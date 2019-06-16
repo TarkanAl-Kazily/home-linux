@@ -11,7 +11,7 @@
 
 # Things to install
 
-- [ ] tmux
+- [X] tmux
 - [X] Vim plugins
 - [ ] A good display manager (session manager, greeter)
 - [ ] Quantum dev kit?
@@ -23,3 +23,4 @@
 - [ ] bashrc
 - [X] vimrc
 - [ ] Touchpad settings - tap to click, gestures
+- [ ] Configure PS1 variable
