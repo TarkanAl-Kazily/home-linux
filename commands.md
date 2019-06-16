@@ -7,7 +7,9 @@
 
 # Command line
 
-- fd: Display disk usage
+- fd: Display disk usage.
+- enablegpu.sh: Custom script to turn on the NVIDIA drivers. Run with sudo.
+- disablegpu.sh: Custom script to turn off the NVIDIA drivers. Run with sudo.
 - nvidia-smi: Display nvidia graphics card information. Requires GPU to be enabled.
 
 ## Groups

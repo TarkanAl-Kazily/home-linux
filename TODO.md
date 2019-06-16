@@ -5,7 +5,7 @@
 [ ] Games!
 [ ] Docker
 [ ] Messenging (Slack, Mattermost?)
-[ ] Graphics card settings - disable
+[X] Graphics card settings
 [ ] Power settings
 
 # Things to install
