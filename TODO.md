@@ -13,7 +13,7 @@
 
 - [X] tmux
 - [X] Vim plugins
-- [ ] A good display manager (session manager, greeter)
+- [X] A good display manager - went with CDM
 - [ ] Quantum dev kit?
 
 # Things to fix
