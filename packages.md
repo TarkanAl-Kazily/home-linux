@@ -5,6 +5,7 @@
 # Extra Packages
 
 - Tilda: A dropdown terminal program
+- unigine-valley: To test the NVIDIA GPU later (.5 GB, so may want to get rid of afterwards)
 
 # AUR packages
 
