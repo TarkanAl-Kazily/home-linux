@@ -7,7 +7,7 @@
 - [ ] Messenging (Slack, Mattermost?)
 - [X] Graphics card settings
 - [ ] Power settings
-- [ ] Wallpaper
+- [X] Wallpaper
 
 # Things to install
 
@@ -23,4 +23,4 @@
 - [X] bashrc
 - [X] vimrc
 - [ ] Touchpad settings - tap to click, gestures
-- [ ] Configure PS1 variable
+- [X] Configure PS1 variable
