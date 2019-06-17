@@ -2,7 +2,7 @@
 
 - [ ] Email
 - [ ] Downloaded Music
-- [ ] Games!
+- [X] Games!
 - [ ] Docker
 - [ ] Messenging (Slack, Mattermost?)
 - [X] Graphics card settings
@@ -19,7 +19,7 @@
 # Things to fix
 
 - [X] Tilda dropdown key - changed to <Control>space
-- [ ] Tilda colorscheme
+- [X] Tilda colorscheme
 - [X] bashrc
 - [X] vimrc
 - [ ] Touchpad settings - tap to click, gestures
