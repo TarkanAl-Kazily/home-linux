@@ -13,14 +13,14 @@
 
 - [X] tmux
 - [X] Vim plugins
-- [X] A good display manager - went with CDM
+- [X] A good display manager - went with tbsm
 - [ ] Quantum dev kit?
 
 # Things to fix
 
 - [X] Tilda dropdown key - changed to <Control>space
 - [ ] Tilda colorscheme
-- [ ] bashrc
+- [X] bashrc
 - [X] vimrc
 - [ ] Touchpad settings - tap to click, gestures
 - [ ] Configure PS1 variable
