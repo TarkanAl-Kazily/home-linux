@@ -1,12 +1,13 @@
 # Things to do
 
-- [ ] Email
+- [X] Email - went with thunderbird. Features extensions, TODO lists, built in calendar
+- [ ] Configure calendar
 - [ ] Downloaded Music
 - [X] Games!
 - [ ] Docker
 - [ ] Messenging (Slack, Mattermost?)
 - [X] Graphics card settings
-- [ ] Power settings
+- [ ] Power settings, sleep mode
 - [X] Wallpaper
 
 # Things to install
