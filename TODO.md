@@ -23,5 +23,5 @@
 - [X] Tilda colorscheme
 - [X] bashrc
 - [X] vimrc
-- [ ] Touchpad settings - tap to click, gestures
+- [X] Touchpad settings - tap to click, gestures
 - [X] Configure PS1 variable
