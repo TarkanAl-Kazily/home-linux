@@ -41,7 +41,7 @@ parse_git_branch() {
 
 # https://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html
 # [tardis:dirname HH:MM:SS] (branch)$
-export PS1="[\[\033[31m\]\t\[\033[00m\] \h:\[\033[34m\]\W\[\033[00m\]]\[\033[32m\] (master)\[\033[00m\]$ "
+export PS1="\[\033[1m\][\[\033[1;31m\]\t\[\033[00;1m\] \h:\W]\[\033[0m\]\[\033[32m\] (master)\[\033[00m\]$ "
 
 if [[ -f ${HOME}/.git-completion.bash ]]
 then
