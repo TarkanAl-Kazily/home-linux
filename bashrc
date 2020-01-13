@@ -6,16 +6,13 @@
 [[ $- != *i* ]] && return
 
 export EDITOR=vim
-# GIT
 export GIT_EDITOR=vim
 export VISUAL=vim
 
 alias ls='ls -CF --color=auto'
-PS1='[\u@\h \W]\$ '
 alias vi='vim'
 alias p8='ping 8.8.8.8'
 
-alias m=less
 alias view='vim -R'
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
