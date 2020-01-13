@@ -27,6 +27,11 @@ set backspace=2
 """""""""""
 
 " Must install vim-plug for this to work
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
 " initializes vim-plug (plugin manager) and its plugins
 call plug#begin('~/.vim/plugged')
