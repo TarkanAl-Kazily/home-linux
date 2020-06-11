@@ -20,3 +20,11 @@
 # Desktop
 
 - <Control>space: dropdown Tilda.
+
+# Tablet settings
+
+To set a tablet to only control a single monitor, [ArchWiki](https://wiki.archlinux.org/index.php/wacom_tablet#xrandr_setup):
+
+```
+xsetwacom set 19 MapToOutput DP-3
+```
