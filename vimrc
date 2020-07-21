@@ -2,10 +2,12 @@
 set sw=4
 set tabstop=4
 set lbr
+" autoindent
 set ai
 set si
 set wrap!
 set hlsearch
+set nocompatible
 
 " replaces tabs with spaces
 set expandtab
@@ -15,11 +17,11 @@ set ruler
 set number
 
 " Enables cool clipboard integration
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 set updatetime=500
 
-set nomodeline
+set modeline
 " Enables deleting lines with backspace
 set backspace=2
 """""""""""
@@ -27,11 +29,6 @@ set backspace=2
 """""""""""
 
 " Must install vim-plug for this to work
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
 
 " initializes vim-plug (plugin manager) and its plugins
 call plug#begin('~/.vim/plugged')
@@ -41,6 +38,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'TarkanAl-Kazily/vimscry'
+Plug 'sirtaj/vim-openscad'
+Plug 'justinj/vim-pico8-syntax'
 
 Plug 'fsharp/vim-fsharp', {
       \ 'for': 'fsharp',
@@ -59,7 +58,7 @@ set laststatus=2
 
 syntax on
 
-colorscheme delek
+colorscheme elflord
 
 set ffs=unix,dos,mac
 
@@ -69,7 +68,7 @@ set encoding=utf8
 " File type detection
 """""""""""
 
-autocmd! BufNewFile,BufRead *.ino,*.pde set filetype=cpp
+" autocmd! BufNewFile,BufRead *.ino,*.pde set filetype=cpp
 " Requires a qs filetype highlighting file
 autocmd! BufNewFile,BufRead *.qs set filetype=qs
 
@@ -115,3 +114,10 @@ nnoremap <leader>t :NERDTreeFocus<CR>
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+
+""""""""""""
+" New Awesome Stuff
+"""""""""""
+
+" Search down into subfolders
+set path+=**
