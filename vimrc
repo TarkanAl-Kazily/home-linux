@@ -117,7 +117,42 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 """"""""""""
 " New Awesome Stuff
-"""""""""""
+""""""""""""
 
 " Search down into subfolders
 set path+=**
+
+""""""""""""
+" DnD stuff
+""""""""""""
+
+" If you have a line wrapping point set, you can auto format highlighted text
+" using 'gq'
+
+let boardheader="The Board"
+
+" Sets the print header to match what I want the Board letter headers to be
+function BoardPrintHeader()
+    set printheader=
+    set printheader+=The\ Board%=Ravnican\ Post
+endfunction
+
+function BoardPrintDocument()
+    setlocal textwidth=80
+    setlocal filetype=markdown
+    exe "normal! gggqG"
+    call BoardPrintHeader()
+    call PrintToPdf()
+    exe "normal! u"
+endfunction
+
+function PrintToPdf(...)
+    let _fname = "%:t:r.pdf"
+    if a:0 > 0
+        let _fname = a:1
+    endif
+    exe "hardcopy > /tmp/printtopdf_tmp.ps"
+    exe "silent !ps2pdf /tmp/printtopdf_tmp.ps " . _fname
+    exe "redraw!"
+endfunction
+
