@@ -1,0 +1,15 @@
+I believe that I originally followed this guide when setting up my Graphics:
+https://gist.github.com/s41m0n/323513c95290c85f7054384ac34c41c5
+
+I did not then disable this guide.
+
+Next, I used Optimus Manager to enable switching between Intel and Nvidia graphics.
+https://github.com/Askannz/optimus-manager
+
+Today (2020_07_23) I am removing these settings to try using the NVIDIA supported PRIME Graphics management system.
+https://wiki.archlinux.org/index.php/PRIME
+
+However, the NVIDIA supported graphics may be broken with Linux kernel 5.4+
+https://forums.developer.nvidia.com/t/5-4-kernel-breaks-prime-synchronization/108765
+
+Going to try using Optimus Manager to control the Optimus settings (since that worked in the past) and use that to manually swap between cards.

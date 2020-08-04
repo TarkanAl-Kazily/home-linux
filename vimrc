@@ -58,7 +58,7 @@ set laststatus=2
 
 syntax on
 
-colorscheme elflord
+colorscheme tarkan
 
 set ffs=unix,dos,mac
 
@@ -68,7 +68,7 @@ set encoding=utf8
 " File type detection
 """""""""""
 
-" autocmd! BufNewFile,BufRead *.ino,*.pde set filetype=cpp
+autocmd! BufNewFile,BufRead *.ino,*.pde set filetype=cpp
 " Requires a qs filetype highlighting file
 autocmd! BufNewFile,BufRead *.qs set filetype=qs
 
@@ -133,8 +133,8 @@ let boardheader="The Board"
 
 " Sets the print header to match what I want the Board letter headers to be
 function BoardPrintHeader()
-    set printheader=
-    set printheader+=The\ Board%=Ravnican\ Post
+    setlocal printheader=
+    setlocal printheader+=The\ Board%=Ravnican\ Post
 endfunction
 
 function BoardPrintDocument()
@@ -147,6 +147,7 @@ function BoardPrintDocument()
 endfunction
 
 function PrintToPdf(...)
+    setlocal printoptions=paper:letter
     let _fname = "%:t:r.pdf"
     if a:0 > 0
         let _fname = a:1
