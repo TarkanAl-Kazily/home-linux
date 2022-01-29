@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+xmodmap -display $DISPLAY $HOME/.Xmodmap
