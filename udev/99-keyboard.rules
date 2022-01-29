@@ -1,0 +1,4 @@
+SUBSYSTEM=="input", SUBSYSTEMS=="usb", ATTRS{idProduct}=="0024", ATTRS{idVendor}=="04d9", RUN+="/usr/local/bin/keyboard-udev"
+SUBSYSTEM=="input", SUBSYSTEMS=="usb", ATTRS{idProduct}=="024f", ATTRS{idVendor}=="05ac", RUN+="/usr/local/bin/keyboard-udev"
+SUBSYSTEM=="input", ATTR{name}=="Keychron K6 Keyboard", RUN+="/usr/local/bin/keyboard-udev"
+SUBSYSTEM=="input", ATTRS{name}=="DURGOD FUSION Keyboard", RUN+="/usr/local/bin/keyboard-udev"
