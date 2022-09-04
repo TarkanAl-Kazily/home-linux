@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="dark-mode" type="bool" value="true"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=6;x=0;y=0"/>
+      <property name="length" type="uint" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="icon-size" type="uint" value="0"/>
+      <property name="size" type="uint" value="21"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="16"/>
+        <value type="int" value="7"/>
+        <value type="int" value="15"/>
+        <value type="int" value="1"/>
+        <value type="int" value="2"/>
+        <value type="int" value="22"/>
+        <value type="int" value="3"/>
+        <value type="int" value="4"/>
+        <value type="int" value="5"/>
+        <value type="int" value="19"/>
+        <value type="int" value="18"/>
+        <value type="int" value="8"/>
+        <value type="int" value="9"/>
+        <value type="int" value="6"/>
+        <value type="int" value="10"/>
+        <value type="int" value="11"/>
+        <value type="int" value="12"/>
+        <value type="int" value="13"/>
+        <value type="int" value="14"/>
+      </property>
+      <property name="disable-struts" type="bool" value="false"/>
+      <property name="leave-opacity" type="uint" value="100"/>
+      <property name="enter-opacity" type="uint" value="100"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.750000"/>
+        <value type="double" value="0.250000"/>
+        <value type="double" value="0.250000"/>
+        <value type="double" value="0.000000"/>
+      </property>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-2" type="string" value="tasklist">
+      <property name="grouping" type="uint" value="0"/>
+    </property>
+    <property name="plugin-3" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-4" type="string" value="pager"/>
+    <property name="plugin-5" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="square-icons" type="bool" value="true"/>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi network connection “ravnica” active: ravnica (80%)"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="wi-fi network connection “ravnica” active: ravnica (77%)"/>
+        <value type="string" value="wi-fi network connection “ravnica” active: ravnica (69%)"/>
+        <value type="string" value="wi-fi network connection “ravnica” active: ravnica (71%)"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="wi-fi network connection “ravnica” active: ravnica (63%)"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="discord"/>
+        <value type="string" value="blueman"/>
+        <value type="string" value="blueman-tray"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="steam"/>
+        <value type="string" value="discord1"/>
+        <value type="string" value="blueman"/>
+      </property>
+    </property>
+    <property name="plugin-8" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="show-notifications" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chromium.instance1035;chromium.instance10621;chromium.instance106798;chromium.instance1070;chromium.instance1087;chromium.instance1130;chromium.instance11337;chromium.instance1156;chromium.instance116172;chromium.instance1162;chromium.instance1166;chromium.instance1193;chromium.instance1208;chromium.instance1217;chromium.instance124441;chromium.instance131359;chromium.instance13171;chromium.instance13407;chromium.instance13664;chromium.instance13925;chromium.instance139810;chromium.instance1405;chromium.instance14196;chromium.instance14958;chromium.instance153468;chromium.instance15433;chromium.instance1560;chromium.instance159540;chromium.instance1622;chromium.instance165820;chromium.instance16776;chromium.instance1679;chromium.instance168116;chromium.instance1706;chromium.instance1751;chromium.instance17880;chromium.instance179005;chromium.instance1844;chromium.instance1861;chromium.instance186805;chromium.instance190423;chromium.instance193265;chromium.instance193479;chromium.instance194942;chromium.instance196637;chromium.instance197688;chromium.instance20260;chromium.instance2062;chromium.instance20869;chromium.instance218938;chromium.instance221237;chromium.instance2290;chromium.instance22985;chromium.instance233266;chromium.instance235797;chromium.instance2403;chromium.instance244219;chromium.instance25585;chromium.instance2609;chromium.instance268444;chromium.instance270735;chromium.instance270951;chromium.instance275384;chromium.instance278174;chromium.instance279881;chromium.instance29006;chromium.instance292948;chromium.instance29677;chromium.instance30404;chromium.instance305712;chromium.instance30972;chromium.instance310612;chromium.instance31679;chromium.instance32569;chromium.instance32786;chromium.instance33246;chromium.instance33486;chromium.instance3484;chromium.instance35966;chromium.instance37708;chromium.instance3827;chromium.instance3834;chromium.instance40232;chromium.instance41025;chromium.instance41950;chromium.instance42079;chromium.instance44563;chromium.instance46287;chromium.instance46529;chromium.instance47951;chromium.instance49600;chromium.instance51726;chromium.instance5175;chromium.instance5232;chromium.instance5356;chromium.instance54898;chromium.instance5530;chromium.instance57718;chromium.instance58258;chromium.instance6067;chromium.instance609;chromium.instance6325;chromium.instance6643;chromium.instance6884;chromium.instance70080;chromium.instance70135;chromium.instance72094;chromium.instance722;chromium.instance724;chromium.instance727;chromium.instance745;chromium.instance752;chromium.instance753;chromium.instance754;chromium.instance75938;chromium.instance768;chromium.instance7724;chromium.instance7746;chromium.instance778;chromium.instance77841;chromium.instance789;chromium.instance79259;chromium.instance8003;chromium.instance8029;chromium.instance80880;chromium.instance811;chromium.instance821;chromium.instance82898;chromium.instance833;chromium.instance836;chromium.instance83929;chromium.instance857;chromium.instance866;chromium.instance876;chromium.instance880;chromium.instance884;chromium.instance8870;chromium.instance900;chromium.instance91449;chromium.instance924;chromium.instance92772;chromium.instance95881;chromium.instance9602;chromium.instance96767;chromium.instance9701;chromium.instance97273;chromium.instance988;firefox.instance50045"/>
+      <property name="enable-wnck" type="bool" value="false"/>
+    </property>
+    <property name="plugin-9" type="string" value="power-manager-plugin"/>
+    <property name="plugin-10" type="string" value="notification-plugin"/>
+    <property name="plugin-11" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-12" type="string" value="clock">
+      <property name="tooltip-format" type="string" value="%x"/>
+      <property name="digital-format" type="string" value="%T"/>
+    </property>
+    <property name="plugin-13" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+      <property name="expand" type="bool" value="false"/>
+    </property>
+    <property name="plugin-14" type="string" value="actions">
+      <property name="items" type="array">
+        <value type="string" value="+lock-screen"/>
+        <value type="string" value="+switch-user"/>
+        <value type="string" value="+separator"/>
+        <value type="string" value="+suspend"/>
+        <value type="string" value="-hibernate"/>
+        <value type="string" value="-hybrid-sleep"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="+shutdown"/>
+        <value type="string" value="+restart"/>
+        <value type="string" value="+separator"/>
+        <value type="string" value="+logout"/>
+        <value type="string" value="-logout-dialog"/>
+      </property>
+      <property name="appearance" type="uint" value="1"/>
+      <property name="button-title" type="uint" value="0"/>
+    </property>
+    <property name="plugin-1" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="165570332415.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-7" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="165570329713.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-15" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="165570331514.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-16" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16557508861.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-18" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16558513341.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-19" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16558514572.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-22" type="string" value="indicator">
+      <property name="square-icons" type="bool" value="false"/>
+      <property name="single-row" type="bool" value="true"/>
+    </property>
+  </property>
+</channel>
