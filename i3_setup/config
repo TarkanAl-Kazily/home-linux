@@ -8,6 +8,12 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+exec --no-startup-id xcompmgr
+
+exec --no-startup-id nitrogen --restore
+
+########### Mouse settings #############
+
 ########### i3-gaps settings               ##############
 # Use pixel borders to take advantage of i3-gaps
 # You can also use any non-zero value if you'd like to have a border
@@ -47,6 +53,9 @@ bindsym Control+q kill
 
 # A more modern dmenu replacement is rofi:
 bindsym Control+space exec "rofi -modi drun,window,ssh -show drun"
+
+# Screenshot a region
+bindsym $mod+c exec "xfce4-screenshooter -r"
 
 # change focus
 bindsym $mod+h focus left
