@@ -2,6 +2,4 @@ clear lock
 clear control
 keycode 66 = Control_L
 add control = Control_L Control_R
-
-! For some 65% keyboards that don't conveniently have tilde, map Shift+Escape to Tilde
-keycode 9 = Escape asciitilde Escape
+pointer = 1 0 3
