@@ -1,6 +1,10 @@
 -- init.lua is automatically loaded by Lua as part of starting neovim
 -- Neovim Lua + Vimscript documentation: https://neovim.io/doc/user/lua.html#lua-vimscript
 
+-------------------------------------------------------------------------------
+-- Standard VIM options
+-------------------------------------------------------------------------------
+
 -- leader character configuration
 vim.g.mapleader = ","
 
