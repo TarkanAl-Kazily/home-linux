@@ -13,13 +13,20 @@ return {
             mappings = {
                 -- Support show_path to auto-fill the full base directory the file will be created in (relative to the CWD)
                 ["a"] = {
-                    config = { show_path = "relative" }
+                    "add",
+                    config = { show_path = "relative" },
                 },
                 ["A"] = {
-                    config = { show_path = "relative" }
+                    "add_directory",
+                    config = { show_path = "relative" },
                 },
                 ["c"] = {
-                    config = { show_path = "relative" }
+                    "copy",
+                    config = { show_path = "relative" },
+                },
+                ["m"] = {
+                    "move",
+                    config = { show_path = "relative" },
                 },
             },
         },
