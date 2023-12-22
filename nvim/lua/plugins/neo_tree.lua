@@ -64,9 +64,9 @@ return {
     },
     config = function(LazyPlugin, opts)
         require(LazyPlugin["name"]).setup(opts)
-        -- TODO: Improve neotree
-        vim.keymap.set('n', '<leader>f', ':Neotree filesystem toggle reveal_force_cwd<CR>', {})
-        vim.keymap.set('n', '<leader>t', ':Neotree focus filesystem<CR>', {})
+        local k_opts = { noremap = true, silent = true }
+        vim.keymap.set('n', '<leader>f', ':Neotree filesystem toggle reveal_force_cwd<CR>', k_opts)
+        vim.keymap.set('n', '<leader>t', ':Neotree focus filesystem<CR>', k_opts)
 
         -- TODO: Implement auto-NeoTree on opening directories
         -- (I think this already works by default?)

@@ -28,18 +28,13 @@ vim.o.hlsearch = true
 vim.o.ruler = true
 vim.o.number = true
 
--- Enables cool clipboard integration
--- TODO: Fix clipboard integration
-vim.o.clipboard = unnamedplus
-
--- TODO: Do these do things anymore?
-vim.o.updatetime = 500
-vim.o.modeline = true
+-- Enables cool clipboard integration with the xclip package installed (systemwide)
+vim.o.clipboard = "unnamedplus"
 
 -- text handling
 vim.o.encoding = "utf8"
 
--- disable mouse (TODO: for now?)
+-- disable mouse
 vim.o.mouse = false
 
 -------------------------------------------------------------------------------

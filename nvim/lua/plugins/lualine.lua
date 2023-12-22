@@ -3,8 +3,10 @@ return {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     opts = {
-        disabled_filetypes = {
-            statusline = {'neo-tree'},
+        options = {
+            disabled_filetypes = {
+                statusline = {'neo-tree'},
+            },
         },
         sections = {
             lualine_a = {'mode'},

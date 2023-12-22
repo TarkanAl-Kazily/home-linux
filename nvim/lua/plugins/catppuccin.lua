@@ -1,7 +1,10 @@
 -- catppuccin color scheme
 return {
     "catppuccin/nvim",
-    lazy = true,
+    lazy = false,
     name = "catppuccin",
-    priority = 1000
+    priority = 1000,
+    opts = {
+        transparent_background = true,
+    },
 }
