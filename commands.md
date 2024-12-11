@@ -28,3 +28,11 @@ To set a tablet to only control a single monitor, [ArchWiki](https://wiki.archli
 ```
 xsetwacom set 19 MapToOutput DP-3
 ```
+
+# Backups
+
+```
+rsync -avr --files-from=files.txt $HOME <BACKUP LOCATION>
+```
+
+[https://stackoverflow.com/questions/16647476/how-to-rsync-only-a-specific-list-of-files]
