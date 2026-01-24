@@ -8,16 +8,20 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+# Setup compositor
+#exec --no-startup-id picom -b --config $HOME/.config/picom/picom.conf
 exec --no-startup-id xcompmgr
 
-exec --no-startup-id nitrogen --restore
+# Set my background
+exec --no-startup-id ~/.fehbg
 
-########### Mouse settings #############
+# Start 1password
+exec --no-startup-id 1password --silent
 
 ########### i3-gaps settings               ##############
 # Use pixel borders to take advantage of i3-gaps
 # You can also use any non-zero value if you'd like to have a border
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 2
 
 gaps inner 12
 
@@ -51,11 +55,16 @@ bindsym $mod+t exec i3-sensible-terminal
 # kill focused window
 bindsym Control+q kill
 
-# A more modern dmenu replacement is rofi:
+# Keybinding to open a more modern dmenu replacement - rofi:
 bindsym Control+space exec "rofi -modi drun,window,ssh -show drun"
 
-# Screenshot a region
+# Keybinding to screenshot a region
 bindsym $mod+c exec "xfce4-screenshooter -r"
+
+# Keybinding to open music client.
+# script will focus on open music client if present, otherwise starts the music client
+bindsym $mod+m exec "sh ~/.local/bin/start_floatingmusicplayer.sh"
+for_window [ title="floatingmusicplayer" ] floating enable, resize set 75 ppt 70 ppt, move position center, border pixel 8
 
 # change focus
 bindsym $mod+h focus left
@@ -142,6 +151,9 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
+
+# Keybinding to moving workspaces between screens
+bindsym $mod+o move workspace to output right
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
