@@ -35,7 +35,7 @@ vim.o.clipboard = "unnamedplus"
 vim.o.encoding = "utf8"
 
 -- disable mouse
-vim.o.mouse = false
+vim.o.mouse = ""
 
 -------------------------------------------------------------------------------
 -- Plugins --
@@ -57,3 +57,13 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Pull plugin configuration from lua/plugins/*.lua (which all are mreged together)
 require("lazy").setup("plugins")
+
+-------------------------------------------------------------------------------
+-- LSP Configuration
+-------------------------------------------------------------------------------
+
+vim.lsp.config('clangd', {
+    cmd = {'clangd', '--query-driver=/usr/bin/arm-none-eabi-*'},
+})
+vim.lsp.enable('clangd')  -- cpp
+vim.lsp.enable('jedi_language_server')  -- python
