@@ -38,10 +38,14 @@ vim.o.encoding = "utf8"
 vim.o.mouse = ""
 
 -------------------------------------------------------------------------------
--- NeoVim Custom Commands and Mappings
+-- FileTypes --
 -------------------------------------------------------------------------------
 
-vim.api.nvim_create_user_command('EditConfig', 'tabnew ~/.config/nvim/', {})
+vim.filetype.add({
+  extension = {
+    p8 = "pico8",
+  },
+})
 
 -------------------------------------------------------------------------------
 -- Plugins --
@@ -71,5 +75,10 @@ require("lazy").setup("plugins")
 vim.lsp.config('clangd', {
     cmd = {'clangd', '--query-driver=/usr/bin/arm-none-eabi-*'},
 })
+vim.lsp.config('pico8', {
+    cmd = {'pico8-ls', '--stdio'},
+    filetypes = {'pico8'},
+})
 vim.lsp.enable('clangd')  -- cpp
 vim.lsp.enable('jedi_language_server')  -- python
+vim.lsp.enable('pico8')  -- pico8 lua
